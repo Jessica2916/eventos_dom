@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOM </title>
+    <style>
+        body{
+            background-color: blueviolet;
+            color: white;
+        }
+        div {
+            padding: 50px;
+            
+        }
+    </style>
+</head>
+<body id="principal">
+    <div>
+        <h1> Aprendendo DOM </h1>
+        <p> 
+            Estar com você foi a decisão mais fácil que tomei na vida e me sinto a pessoa mais sortuda do mundo todos os dias.
+            Eu amo sua honestidade, sua paixão, sua resiliência, sua coragem, sua parceria. 
+            Você é a minha alma gêmea, meu melhor amigo e meu confidente......
+        </p>
+        <button>Clique aqui 1</button>
+        <button>Clique aqui para mais</button>
+    </div>
+    <script>
+        //window.document.write("Minha primeira manipulação DOM")
+        //window.alert("Ola")
+        var x = window.document.getElementById("principal")
+        x.style.background = "blueviolet"
+        var y = window.document.getElementsByTagName("button")[0]
+        y.innerHTML = "Karols"
+    </script>
+</body>
+</html>
